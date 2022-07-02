@@ -39,8 +39,6 @@ img {
 .link{
     text-decoration: none;
     color: inherit;
-    display: flex;
-    flex-direction: row-reverse;
 }
 
 .list{
@@ -60,6 +58,12 @@ img {
 }
 
 .nav{
+    display: block;
+    width: 1200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     align-items: center;
 }
@@ -119,7 +123,6 @@ img {
 .hero{
     background:var(--background-color);
     text-align: center;
-
 }
 .hero-text{
     margin-top: 0px;
@@ -130,6 +133,7 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color:  var(--white-color);
+
 }
 .hero-btn{
     width: 200px;
@@ -165,16 +169,67 @@ img {
     color: var(--white-color);
     cursor: pointer;
 }
+.future-list{
+    
+    width: 1200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+}
+.future-item{
+    margin-top: 94px;
+    text-align: left;
+}
+.future-item+.future-item{
+    margin-left: 30px;
+}
 .future-title-text{
     font-size: 14px;
     line-height: 1.71;
     text-transform: uppercase;
-
+    
+    margin-bottom: 10px;
 }
 .future-low-text{
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--tittle-text-color); 
+}
+.work-list{
+    display: flex;
+    width: 1200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.work-item{
+    margin-top: 50px;
+}
+.work-list .work-item:not(:last-child){
+    margin-right: 30px;
+}
+.work-tittle{
+    margin-top: 94px;
+}
+.team-list{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.team-tittle{
+    margin-top: 188px;
+}
+.team-item:not(:last-child){
+    margin-right: 30px;
+}
+.team-item{
+    margin-top: 50px;
+    margin-bottom: 94px;
 }
 .partf-img-text{
     font-size: 18px;
@@ -226,12 +281,29 @@ img {
     clip-path: inset(100%); 
     clip: rect(0 0 0 0); 
     overflow: hidden; 
-    }
+ }
+   
+.container{
+    width: 1200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+ }
 .address{
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white-color);
+    
+    margin-top: 20px;
+}
+.footer-list{
+    margin-top: 9px;
+}
+.footer-item:not(:last-child){
+    margin-bottom: 9px ;
 }
 .footer-logo{
     color: var(--white-color);
